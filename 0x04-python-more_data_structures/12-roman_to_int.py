@@ -9,7 +9,7 @@ def roman_to_int(roman_string):
         if numerus.get(roman_string[i], 0) == 0:
             return(0)
 
-        if (i != (len(roman_string) -1) and
+        if (i != (len(roman_string) - 1) and
                 numerus[roman_string[i]] < numerus[roman_string[i + 1]]):
                 int_val += numerus[roman_string[i]] * -1
 
