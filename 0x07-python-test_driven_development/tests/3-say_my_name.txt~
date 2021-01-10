@@ -1,0 +1,19 @@
+=======================
+``say_my_name`` module
+=======================
+
+Usage of ``say_my_name``:
+Prints "My name is" followed by ``first_name`` and ``last_name``,
+which must be strings
+-------------------
+
+Import:
+    >>> say_my_name = __import__('3-say_my_name').say_my_name
+
+Pass two strings as arguments:
+    >>> say_my_name("John", "Smith")
+    My name is John Smith
+
+Pass only one string as argument:
+    >>> say_my_name("Bob")
+    My name is Bob

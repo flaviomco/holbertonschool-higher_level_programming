@@ -1,0 +1,46 @@
+=======================
+``add_integer`` module
+=======================
+
+Using ``add_integer`` with two variables ``a`` and ``b``, where both variables
+must be an integer or a float (which will be converted to integer)
+-------------------
+
+Import:
+    >>> add_integer = __import__('0-add_integer').add_integer
+
+Add two integers:
+    >>> add_integer(1, 2)
+    3
+
+Add positive and negative integers:
+    >>> add_integer(100, -2)
+    98
+
+Add a float and integer:
+    >>> add_integer(2.8, 2)
+    4
+
+Add two floats:
+    >>> add_integer(2.0, 3.0)
+    5
+
+Add int and string:
+    >>> add_integer(4, "School")
+    Traceback (most recent call last):
+    TypeError: b must be an integer
+
+Add string and int:
+    >>> add_integer("School", 4)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Pass no parameters:
+    >>> add_integer(None)
+    Traceback (most recent call last):
+    TypeError: a must be an integer
+
+Pass infinite parameters:
+    >>> add_integer(float('inf'))
+    Traceback (most recent call last):
+    OverflowError: cannot convert float infinity to integer
