@@ -44,3 +44,12 @@ Pass infinite parameters:
     >>> add_integer(float('inf'))
     Traceback (most recent call last):
     OverflowError: cannot convert float infinity to integer
+
+Cannot convert float NaN to integer:
+    >>> add_integer(float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
+
+    >>> add_integer(2, float('nan'))
+    Traceback (most recent call last):
+    ValueError: cannot convert float NaN to integer
