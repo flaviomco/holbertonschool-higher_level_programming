@@ -24,6 +24,10 @@ class TestMaxInteger(unittest.TestCase):
     def test_oneelement(self):
         self.assertEqual(max_integer([1]), 1)
 
+    def test_empty_list(self):
+        empty = []
+        self.self.assertEqual(max_integer(empty), None)
+
     @unittest.expectedFailure
     def test_notarray(self):
         self.assertEqual(max_integer(["hello"], "broken"))
