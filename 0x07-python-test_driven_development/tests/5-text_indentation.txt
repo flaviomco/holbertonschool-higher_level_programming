@@ -55,11 +55,16 @@ Print an integer:
     TypeError: text must be a string
 
 Print text that has no ., ?, or ::
-      >>> text_indentation("Holberton School")
-      Holberton School
+    >>> text_indentation("Holberton School")
+    Holberton School
 
 Print text that has . but no space after:
-      >>> text_indentation("Holberton.School")
-      Holberton.
-      <BLANKLINE>
-      School
+    >>> text_indentation("Holberton.School")
+    Holberton.
+    <BLANKLINE>
+    School
+
+Missing one argument:
+    >>> text_indentation(None)
+    Traceback (most recent call last):
+    TypeError: text must be a string
