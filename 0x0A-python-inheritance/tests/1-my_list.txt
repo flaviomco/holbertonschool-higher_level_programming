@@ -74,3 +74,10 @@ Check that print_sorted() returns new list:
     >>> second_list = id(my_list)
     >>> first_list == second_list
     True
+
+If ``print_sorted(...)`` is called on a list of different types, a TypeError
+will be raised.
+    >>> my_list = MyList([1, "Betty", "Holberton", 5])
+    >>> my_list.print_sorted()
+    Traceback (most recent call last):
+    TypeError: unorderable types: str() < int()
