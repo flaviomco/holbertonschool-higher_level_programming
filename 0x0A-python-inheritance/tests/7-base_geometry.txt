@@ -21,6 +21,13 @@ Print str:
     	            ...
     TypeError: string must be an integer
 
+    >>> bg = BaseGeometry()
+    >>> bg.integer_validator("invalid tuple", (1,))
+    Traceback (most recent call last):
+    TypeError: invalid tuple must be an integer
+
+
+
 Print bool:
     >>> bg = BaseGeometry()
     >>> bg.integer_validator("bool", True)
