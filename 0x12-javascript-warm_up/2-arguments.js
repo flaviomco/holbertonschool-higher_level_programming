@@ -1,10 +1,10 @@
 #!/usr/bin/node
-let arguments;
+let argus;
 if (process.argv.length < 3) {
-  arguments = 'No argument';
+  argus = 'No argument';
 } else if (process.argv.length === 3) {
-  arguments = 'Argument found';
+  argus = 'Argument found';
 } else {
-  arguments = 'Arguments found';
+  argus = 'Arguments found';
 }
-console.log(arguments);
+console.log(argus);
